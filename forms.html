@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="/data" method="get">
+      <fieldset >
+        <legend>Personal Detail</legend>
+
+        <div>
+          <label for="name"> First Name</label>
+       <input type="text" id="name" name="name" required >
+        </div> <br>
+        <div>
+          <label for="middlename">Middle Name</label>
+          <input type="text" id="middlename" name="middlename">
+        </div><br>
+        <div>
+          <label for="lastname">Last Name </label>
+          <input type="text" id="lastname" name="middlename">
+        </div><br>
+        <div>
+          <label for="course">Course:</label>
+          <select name="course" id="course">
+            <option value="course">Course</option>
+            <option value="course">BCA</option>
+            <option value="course">BBA</option>
+            <option value="course">B-Tech</option>
+            <option value="course">MBA</option>
+            <option value="course">MCA</option>
+            <option value="course">M-Tech</option>
+          </select>
+        </div><br>
+        <div>
+          <label for="gender">Gender:</label> <br>
+          <input type="radio" name="gender" id="gender" value="male">
+          <label for="gender">Male</label><br>
+          <input type="radio" name="gender" id="gender" value="femlae">
+          <label for="gender">Female</label><br>
+         <input type="radio" name="gender" id="gender" value="Transegender">
+         <label for="gender" id="gender">Other</label><br>
+      </div><br>
+      <div>
+        <div>
+          <label for="dateofbirth">DOB</label>
+          <input type="date" id="dateofbirth">
+        </div>
+        <br>
+        <div>
+          <label for="phone">Phone:</label>
+          <input type="text" name="country code" value="+91" size="2" disabled>
+          <input type="tel" id="phone" name="phone" >
+        </div><br>
+      <!-- <label for="music">Music</label>      <select name="fav_music" id="music">
+        <option value="none">Select Music</option>
+        <option value="Young Stunner">Gumaan</option>
+        <option value="Young Stunner">Afsaney</option>
+        <option value="Young Stunner">Why</option>
+        <option value="Young Stunner">Therepy</option>
+      </select></div> 
+      <br>
+      <div> -->
+        
+        <label for="address">Address</label><br>    
+        <textarea required name="address" id="address" cols="100%" rows="5"></textarea>
+      </div><br>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+      </div><br>
+
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+      </div><br>
+
+      <div>
+        <label for="reenter">Re-type password: </label>
+        <input type="password" id="reenter" name="reenter" required>
+      </div>
+
+      
+        <br>
+        <div>  <input type="checkbox" id="input">
+          <label for="input">Agree to terms and conditions</label>
+       </div>
+        <br>
+        <div>
+          <label for="files">Choose File</label>
+          <input type="file" id="files">
+        </div><br>
+        <div> <label for="backgrond">Choose colour</label> 
+           <input id="backgrond" type="color"></div><br>
+
+        <div>
+          <input type="reset" value="Reset">
+          <input type="submit" value="Submit"></div><br>
+      
+    </fieldset>
+    </form>
+  </body>
+
+</html>
